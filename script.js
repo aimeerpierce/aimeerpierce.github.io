@@ -1,9 +1,9 @@
-    var swap_img = function () {
-        var $this = $(this);
-        var newSource = $this.data('alt-src');
-        $this.data('alt-src', $this.attr('src'));
-        $this.attr('src', newSource);
-    }
+var swap_img = function () {
+    var $this = $(this);
+    var newSource = $this.data('alt-src');
+    $this.data('alt-src', $this.attr('src'));
+    $this.attr('src', newSource);
+}
 
 $('document').ready(function(){
 	$("a").hover(function(){
@@ -28,3 +28,58 @@ $('document').ready(function(){
     	$('img.note').hover(swap_img, swap_img);
 	});
 });
+
+function toggle_aboutme() {
+	var aboutme = document.getElementById('aboutme');
+	var exp = document.getElementById('experience');
+	var working = document.getElementById('working');
+	var passions = document.getElementById('passions');
+	var val = window.getComputedStyle(aboutme).getPropertyValue("display");
+	if (val == 'none') {
+	    aboutme.style.display = 'block';
+	    exp.style.display = 'none';
+	    working.style.display = 'none';
+	    passions.style.display = 'none';
+	}
+}
+
+function toggle_exp() {
+	var aboutme = document.getElementById('aboutme');
+	var exp = document.getElementById('experience');
+	var working = document.getElementById('working');
+	var passions = document.getElementById('passions');
+	var val = window.getComputedStyle(exp).getPropertyValue("display");
+	if (val == 'none') {
+	    exp.style.display = 'block';
+	    aboutme.style.display = 'none';
+	    working.style.display = 'none';
+	    passions.style.display = 'none';
+	}
+}
+
+function toggle_working() {
+	var aboutme = document.getElementById('aboutme');
+	var exp = document.getElementById('experience');
+	var working = document.getElementById('working');
+	var passions = document.getElementById('passions');
+	var val = window.getComputedStyle(working).getPropertyValue("display");
+	if (val == 'none') {
+	    working.style.display = 'block';
+	    exp.style.display = 'none';
+	    aboutme.style.display = 'none';
+	    passions.style.display = 'none';
+	}
+}
+function toggle_passions() {
+	var aboutme = document.getElementById('aboutme');
+	var exp = document.getElementById('experience');
+	var working = document.getElementById('working');
+	var passions = document.getElementById('passions');
+	var val = window.getComputedStyle(passions).getPropertyValue("display");
+	if (val == 'none') {
+	    passions.style.display = 'block';
+	    exp.style.display = 'none';
+	    aboutme.style.display = 'none';
+	    working.style.display = 'none';
+	}
+}

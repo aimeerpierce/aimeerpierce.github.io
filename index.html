@@ -14,8 +14,6 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  	<script src="script.js"></script>
-   	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   	<link rel="stylesheet" type="text/css" href="style.css">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -47,11 +45,15 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
+	        <li><div onclick="toggle_aboutme()">About Me</div></li>
+	        <li>|</li>
+	        <li><div onclick="toggle_exp()">Experience</div></li>
+	        <li>|</li>
+	        <li><div onclick="toggle_working()">Things I'm Working On</div></li>
+	        <li>|</li>
+	        <li><div onclick="toggle_passions()">Things I Like</div></li>
 	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Link</a></li>
+	      <!--ul class="nav navbar-nav navbar-right">
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
@@ -62,42 +64,92 @@
 	            <li><a href="#">Separated link</a></li>
 	          </ul>
 	        </li>
-	      </ul>
+	      </ul-->
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-
-		<div class="row">
+		<div class="row" id="aboutme">
 			<div class="col-sm-12">
-			<p>
-				Aimee's still working on making me the best website I can be. <br>
-			</p>
+				<div class="panel panel-default">
+					<div>
+						<img class="headshot" src="headshot2.jpg">
+					</div>
+
+  					<div class="panel-body">
+  						<div class="row">
+  							<div class="col-sm-4">
+  								<h1>Student</h1>
+  								<p>Major: Chemical Engineering</p>
+  								<p>Minors: Computer Science and Spanish</p>
+  							</div>
+  							<div class="col-sm-4">
+  								<h1>Hacker</h1>
+  								<p>President of HackISU</p>
+  								<p>Digital Women Code Camp Organizer</p>
+  							</div>
+  							<div class="col-sm-4">
+  								<h1>Feminist</h1>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
 			</div>
 		</div>
-		<div class="row">
-			<p>
-			<div class="col-sm-6">
-				She's been working on a few other things too:
-			</div>
-			<div class="col-sm-6">
-				<a href="https://hackisu.org/">HackISU</a><br>
-				<a href="http://digitalwomen.ece.iastate.edu/#codecamp">Digital Women Code Camp</a>
-			</div>
-			</p>
-		</div>
-					<div class="row">
-				<div class="col-sm-6">
-					<p>
-						These are some things that Aimee cares deeply about: <a href="http://www.pih.org/">Partners In Health</a> <a href="https://www.assaultcarecenter.org/">ACCESS</a>
-					</p>
+		<div class="row" id="experience">
+			<div class="col-sm-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row">
+							<h1>Experience</h1>
+							<div class="col-sm-6">
+								<h2>HeSaidSheSaid</h2>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-6">
-					<p>
-						These are some things that Aimee thinks are cool: <a href="http://tab.gladly.io/">Tab for a Cause</a> <a href="http://www.hackharassment.com/">Hack Harassment</a>
-					</p>
+			</div>
+		</div>
+
+		<div class="row" id="working">
+			<div class="col-sm-12">
+				<div class="panel panel-default projects">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<h1><a href="https://hackisu.org/">HackISU</a></h1>
+							</div>
+							<div class="col-sm-6">
+								<h1><a href="http://digitalwomen.ece.iastate.edu/#codecamp">Digital Women</a></h1>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+		<div class="row" id="passions">
+		<div class="col-sm-12">
+			<div class="panel panel-default projects">
+			<div class="panel-body">
+
+			<div class="col-sm-6">
+				<p>
+					<a href="http://www.pih.org/">Partners In Health</a> <br>
+					<a href="https://www.assaultcarecenter.org/">ACCESS</a>
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<p>
+					<a href="http://tab.gladly.io/">Tab for a Cause</a> <br>
+					<a href="http://www.hackharassment.com/">Hack Harassment</a>
+				</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
 
 		<div class="container-fluid" id="column">
 			<div id="social" align="center">
@@ -119,6 +171,6 @@
 			</div>
 		</div>
 	</div>
-  <script src="js/scripts.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
