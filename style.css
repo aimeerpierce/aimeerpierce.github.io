@@ -10,6 +10,32 @@ a {
 	text-decoration: none;
 }
 
+li {
+	padding: 0px 5px 0px 5px;
+}
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+    float: none;
+    align-items: center;
+    display: inline-block;
+    margin:0 auto;
+    left: 0;
+    padding-left: 50px;
+}
+
+/*.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}*/
+
 #body{
 	display: inline-block;
 	width:90%;
