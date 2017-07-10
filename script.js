@@ -5,6 +5,10 @@ var swap_img = function () {
     $this.attr('src', newSource);
 }
 
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
 $('document').ready(function(){
 	$("a").hover(function(){
 		$(this).css("color","#878787");
