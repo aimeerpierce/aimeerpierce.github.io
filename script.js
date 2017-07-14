@@ -15,6 +15,11 @@ $('document').ready(function(){
 	}, function() {
 		$(this).css("color","#5f5f5f");
 	});
+	$("li").hover(function(){
+		$(this).css("color","#878787");
+	}, function() {
+		$(this).css("color","#5f5f5f");
+	});
 
 	$(function () {
     	$('img.github').hover(swap_img, swap_img);
