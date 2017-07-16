@@ -1,7 +1,7 @@
 body {
 	background-color: #f9f9f9;
 	color: #3a3a3a;
-	font-family:OpenSans;
+	font-family:Courier New;
 	font-size: 32px;
 	margin: 10px 40px 10px 50px;
 }
@@ -12,13 +12,16 @@ a {
 }
 
 li {
-	padding: 0px 25px 0px 25px;
+	padding: 0px 15px 0px 15px;
 	cursor: pointer;
 }
 h1 {
 	font-family: bell go
 	padding: 5px 5px 5px 5px;
-	margin-left: 30px;
+	margin-left: 0px;
+	align-items: center;
+	align-content: center;
+	align-self: center;
 }
 
 h2 {
@@ -27,7 +30,8 @@ h2 {
 }
 
 p {
-	margin-left: 55px;
+	font-family: News Cycle;
+	margin-left: 20px;
 	font-size:22px;
 }
 
@@ -36,7 +40,7 @@ p {
 }
 
 .panel-body {
-	padding-left: 20px;
+	padding-left: 0px;
 }
 
 .navbar {
@@ -53,37 +57,42 @@ p {
     padding-left: 70px;
 }
 
-.col-sm-6 {
+.col-sm-4 {
 	padding: 5px 5px 5px 5px;
+}
+
+.col-sm-6{
+	padding: 5px 5px 5px 5px;
+	margin-left: 0px;
 }
 
 #body{
 	display: inline-block;
-	width:90%;
+	width:100%;
 	margin: 0px;
-	float:left;
+	float:none;
 }
 
-#column{
+#footer{
 	display: inline-block;
-	width:10%;
+	width:100%;
 	margin: 0px;
-	float: right;
 	align-items: center;
 }
 
 #social {
 	padding-left: 0px;
 	padding-right: 0px;
-	font-size:46px;
 	align-items: center;
+	float:right;
 }
 
 .icon {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	padding: 30px 0px 0px 0px;
+	padding: 0px 2px 0px 0px;
+	float:left;
 }
 
 #experience {
@@ -98,14 +107,10 @@ p {
 	display:none;
 }
 
-#emailtext {
-	font-family: rockwell;
-	font-size: 10px;
-	float: right;
+#student_deets{
+	text-align: right;
 }
 
-#resume {
-	font-family: rockwell;
-	font-size: 10px;
-	float: right;
+#student_title{
+	padding-left: 20px;
 }

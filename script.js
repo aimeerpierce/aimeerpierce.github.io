@@ -63,6 +63,7 @@ function toggle_exp() {
 	    aboutme.style.display = 'none';
 	    working.style.display = 'none';
 	    passions.style.display = 'none';
+
 	}
 }
 
@@ -71,12 +72,14 @@ function toggle_working() {
 	var exp = document.getElementById('experience');
 	var working = document.getElementById('working');
 	var passions = document.getElementById('passions');
+
 	var val = window.getComputedStyle(working).getPropertyValue("display");
 	if (val == 'none') {
 	    working.style.display = 'block';
 	    exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    passions.style.display = 'none';
+
 	}
 }
 function toggle_passions() {
@@ -84,11 +87,19 @@ function toggle_passions() {
 	var exp = document.getElementById('experience');
 	var working = document.getElementById('working');
 	var passions = document.getElementById('passions');
+
 	var val = window.getComputedStyle(passions).getPropertyValue("display");
 	if (val == 'none') {
 	    passions.style.display = 'block';
 	    exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    working.style.display = 'none';
+
 	}
 }
+
+function open_resume(){
+	var win = window.open("https://docs.google.com/document/d/1reeo9TBD21p95SuCOOm6MY8fHtc-pHFRyrjBPd01jtg/pub", '_blank');
+	win.focus();
+}
+
