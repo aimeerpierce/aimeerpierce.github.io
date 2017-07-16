@@ -18,15 +18,18 @@ li {
 h1 {
 	font-family: bell go
 	padding: 5px 5px 5px 5px;
-	margin-left: 0px;
 	align-items: center;
 	align-content: center;
 	align-self: center;
 }
 
 h2 {
+	margin-left: 0px;
+	font-family: bell go
 	padding: 5px 5px 5px 5px;
-	margin-left: 45px;
+	align-items: center;
+	align-content: center;
+	align-self: center;
 }
 
 p {
