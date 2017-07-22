@@ -103,3 +103,28 @@ function open_resume(){
 	win.focus();
 }
 
+function expand_content(contentType){
+	var plus = document.getElementsByClassName('fa fa-plus ' + contentType);
+	var minus = document.getElementsByClassName('fa fa-minus ' + contentType);
+	var content = document.getElementsByClassName('content ' + contentType);
+	if (content[0].style.display == 'block'){
+		plus[0].style.display = 'block';
+		minus[0].style.display = 'none';
+		content[0].style.display = 'none';
+	} else {
+		plus[0].style.display = 'none';
+		minus[0].style.display = 'block';
+		content[0].style.display = 'block';
+	}
+
+}
+
+function retract_content(contentType){
+	var plus = document.getElementsByClassName('fa fa-plus ' + contentType);
+	var minus = document.getElementsByClassName('fa fa-minus ' + contentType);
+	var content = document.getElementsByClassName('content ' + contentType);
+	plus[0].style.display = 'block';
+	minus[0].style.display = 'none';
+	content[0].style.display = 'none';
+}
+
