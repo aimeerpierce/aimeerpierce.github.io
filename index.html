@@ -47,7 +47,8 @@
 
 				       <!--  <li><div onclick="toggle_working()">Things I'm Working On</div></li> -->
 
-				        <li><div onclick="open_resume()">Resume</div></li>
+				        <!-- <li><div onclick="open_resume()">Resume</div></li> -->
+				        <li><div onclick="toggle_resume()">Resume</div></li>
 
 				        <li><div onclick="toggle_passions()"> <i class="fa fa-hand-peace-o" aria-hidden="true"></i></div></li>
 				        	<!-- <img class="email" data-alt-src="icons/heart1.svg" src="icons/heart0.svg"> -->
@@ -75,13 +76,15 @@
 		<div class="row" id="aboutme">
 			<div class="col-sm-12">
 				<div class="panel panel-default">
-					<div>
-						<!--img class="headshot" src="headshot2.jpg"-->
-					</div>
-
   					<div class="panel-body">
   						<div class="row">
-  						<h1 align="center" id="student_title">student</h1>
+  							<h2>hi, i'm aimee</h2>
+  							<p>I like climbing, yoga, and programming too. They're all fun, creative, and push me to be my best self!</p>
+  							<p>I started programming when I decided to attend my first hackathon, and I've been hooked ever since. I'm so grateful that I've had opportunities to grow as a developer without formally switching my major. Working as a software developer has affirmed that my pivot from Chemical Engineering to Software was well worth the effort, and I'm excited to keep learning and growing! </p>
+  						</div>
+  						<hr>
+  						<div class="row">
+  						<h1 align="center" id="student_title">quick hits</h1>
   							<div class="col-sm-4 col-sm-offset-2" id="student_deets">
   								<p>Iowa State University</p>
   								<p>Major: Chemical Engineering</p>
@@ -90,7 +93,7 @@
   							</div>
   							<div class="col-sm-6">
   								<p>President of <a href="www.hackisu.org" target="_blank">HackISU</a></p>
-  								<p><a href="http://digitalwomen.ece.iastate.edu/" target="_blank">Digital Women</a> Code Camp Organizer</p>
+  								<p><a href="http://digitalwomen.ece.iastate.edu/" target="_blank">Digital Women</a> Code Camp Co-Founder</p>
   								<p><a href="http://www.multicultural.dso.iastate.edu/programs/gwc" target="_blank">George Washington Carver Scholar</a></p>
   							</div>
   						</div>
@@ -100,8 +103,8 @@
 		</div>
 		<div class="row" id="experience">
 			<div class="col-sm-12">
-				<div class="panel panel-default">
-					<div class="panel-body">
+				<div class="row panel panel-default">
+					<div class="col-sm-6 panel-body">
 						<h1 align="center">work</h1>
 						<div class="row panel panel-default">
 							<div class="col-sm-8 col-sm-offset-2">
@@ -113,7 +116,7 @@
 
 									<a href="https://www.telligen.com/" target="_blank">Telligen - 2017</a>
 								</h2>
-								<p class="content Telligen">Worked with Java Spring and Javascript on application that manages Medicaid/Medicare claims. Worked with agile team to develop various professional services for clients as well as supporting fixes. </p>
+								<p class="content Telligen">Telligen is a healthcare company that manages state and federal contracts. I worked with Java Spring and Javascript on an application that manages Medicaid/Medicare claims. I worked with an agile team to develop various professional services for clients as well as supporting fixes. </p>
 							</div>
 						</div>
 						<div class="row panel panel-default">
@@ -125,10 +128,35 @@
 									</button>
 									<a href="https://gforgegroup.com/about" target="_blank">GForge Group - 2016</a>
 								</h2>
-								<p class="content GForge">Developed projects for GForge NEXT using Javascript, AngularJS, PHP, and MySQL. Stood-up Grafana dashboarding tool using Docker and implemented a product tour using intro.js.</p>
+								<p class="content GForge">GForge is a product development tool that manages software workflow. I developed projects for GForge NEXT using Javascript, AngularJS, PHP, and MySQL. I stood-up Grafana dashboarding tool using Docker and implemented a product tour using intro.js.</p>
 							</div>
 						</div>
+						<div class="row panel panel-default">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h2 class="text-center">
+									<button type="button" class="btn btn-primary-outline" onclick="expand_content('Lyondell')">
+										<i class="fa fa-plus Lyondell" aria-hidden="true"></i>
+										<i class="fa fa-minus Lyondell" aria-hidden="true"></i>
+									</button>
+									<a href="https://gforgegroup.com/about" target="_blank">Lyondellbasell - 2015</a>
+								</h2>
+								<p class="content Lyondell">I worked as a Chemical Engineering Intern doing project engineering in the Olefins Unit (a fancy word for proccesses that turn simpler carbon compounds into more complex compounds) for an upcoming plant turnaround, where the entire plant shuts down for maintanence and process improvements. I planned multiple projects such as removing out-of-use equipment, and engineered process rerouting.</p>
+							</div>
 						</div>
+						<div class="row panel panel-default">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h2 class="text-center">
+									<button type="button" class="btn btn-primary-outline" onclick="expand_content('Mills')">
+										<i class="fa fa-plus Mills" aria-hidden="true"></i>
+										<i class="fa fa-minus Mills" aria-hidden="true"></i>
+									</button>
+									<a href="https://gforgegroup.com/about" target="_blank">General Mills - 2015</a>
+								</h2>
+								<p class="content Mills">The Manufacturing Engineering Associate program gave me opportunities to lead process improvement projects in a Cereal Operations facility. I worked on projects to minimize kick-ffs and over-pack in cereal packaging to prevent waste and drive efficiency.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 panel-body">
 						<h1 align="center">hackathon organizing</h1>
 						<div class="row panel panel-default">
 							<div class="col-sm-8 col-sm-offset-2">
@@ -137,9 +165,9 @@
 									<i class="fa fa-plus HackISU" aria-hidden="true"></i>
 									<i class="fa fa-minus HackISU" aria-hidden="true"></i>
 								</button>
-								<a href="hackisu.org" target="_blank">HackISU - Present</a>
+								<a href="hackisu.org" target="_blank">HackISU - Director</a>
 								</h2>
-								<p class="content HackISU">I'm proud to be President of HackISU, a hackathon that hosts over 300 students bi-yearly. Hackathons are how I started programming, so I'm extremely excited to contribute to a positive, inclusive hacker community. </p>
+								<p class="content HackISU">I'm proud to be Director of HackISU, a hackathon that hosts over 300 students bi-yearly. Hackathons are how I started programming, so I'm extremely excited to contribute to a positive, inclusive hacker community. </p>
 							</div>
 						</div>
 						<div class="row panel panel-default">
@@ -149,9 +177,9 @@
 										<i class="fa fa-plus DW" aria-hidden="true"></i>
 										<i class="fa fa-minus DW" aria-hidden="true"></i>
 									</button>
-									<a href="http://digitalwomen.ece.iastate.edu/" target="_blank">Digital Women - Code Camp Organizer</a>
+									<a href="http://digitalwomen.ece.iastate.edu/" target="_blank">Digital Women - Code Camp Co-Founder</a>
 								</h2>
-								<p class="content DW">Digital Women is a student group that supports the community of women in computing at ISU. I was so happy to help organize our very first hackathon this spring which hosted 75 women. </p>
+								<p class="content DW">Digital Women is a student group that supports the community of women in computing at ISU. It was an amazing experience to co-found and direct our very first hackathon this spring which hosted 75 women technologists. </p>
 							</div>
 						</div>
 					</div>
@@ -159,18 +187,13 @@
 			</div>
 		</div>
 
-		<div class="row" id="working">
+		<div class="row" id="resume">
 			<div class="col-sm-12">
 				<div class="panel panel-default projects">
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-sm-6">
-								<h1><a href="https://hackisu.org/" target="_blank">HackISU</a></h1>
-							</div>
-							<div class="col-sm-6">
-								<h1><a href="http://digitalwomen.ece.iastate.edu/#codecamp" target="_blank">Digital Women</a></h1>
-							</div>
-						</div>
+							<a id="downloadResume" href="resume.pdf" download><i class="fa fa-download" aria-hidden="true"></i></a>
+							<iframe frameBorder="0" src="https://docs.google.com/file/d/0Bzc16TWZuwDQWHVKLVQwMnIwcTQ/preview"></iframe></div>
 					</div>
 				</div>
 			</div>

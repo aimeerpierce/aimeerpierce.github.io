@@ -10,16 +10,12 @@ particlesJS.load('particles-js', 'assets/particles.json', function() {
 });
 
 $('document').ready(function(){
-	$("a").hover(function(){
+
+/*	$("li").hover(function(){
 		$(this).css("color","#878787");
 	}, function() {
 		$(this).css("color","#5f5f5f");
-	});
-	$("li").hover(function(){
-		$(this).css("color","#878787");
-	}, function() {
-		$(this).css("color","#5f5f5f");
-	});
+	});*/
 
 	$(function () {
     	$('img.github').hover(swap_img, swap_img);
@@ -41,13 +37,13 @@ $('document').ready(function(){
 function toggle_aboutme() {
 	var aboutme = document.getElementById('aboutme');
 	var exp = document.getElementById('experience');
-	var working = document.getElementById('working');
+	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 	var val = window.getComputedStyle(aboutme).getPropertyValue("display");
 	if (val == 'none') {
 	    aboutme.style.display = 'block';
 	    exp.style.display = 'none';
-	    working.style.display = 'none';
+	    resume.style.display = 'none';
 	    passions.style.display = 'none';
 	}
 }
@@ -55,27 +51,27 @@ function toggle_aboutme() {
 function toggle_exp() {
 	var aboutme = document.getElementById('aboutme');
 	var exp = document.getElementById('experience');
-	var working = document.getElementById('working');
+	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 	var val = window.getComputedStyle(exp).getPropertyValue("display");
 	if (val == 'none') {
 	    exp.style.display = 'block';
 	    aboutme.style.display = 'none';
-	    working.style.display = 'none';
+	    resume.style.display = 'none';
 	    passions.style.display = 'none';
 
 	}
 }
 
-function toggle_working() {
+function toggle_resume() {
 	var aboutme = document.getElementById('aboutme');
 	var exp = document.getElementById('experience');
-	var working = document.getElementById('working');
+	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 
-	var val = window.getComputedStyle(working).getPropertyValue("display");
+	var val = window.getComputedStyle(resume).getPropertyValue("display");
 	if (val == 'none') {
-	    working.style.display = 'block';
+	    resume.style.display = 'block';
 	    exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    passions.style.display = 'none';
@@ -85,7 +81,7 @@ function toggle_working() {
 function toggle_passions() {
 	var aboutme = document.getElementById('aboutme');
 	var exp = document.getElementById('experience');
-	var working = document.getElementById('working');
+	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 
 	var val = window.getComputedStyle(passions).getPropertyValue("display");
@@ -93,7 +89,7 @@ function toggle_passions() {
 	    passions.style.display = 'block';
 	    exp.style.display = 'none';
 	    aboutme.style.display = 'none';
-	    working.style.display = 'none';
+	    resume.style.display = 'none';
 
 	}
 }
