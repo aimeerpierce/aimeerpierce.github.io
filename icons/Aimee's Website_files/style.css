@@ -1,14 +1,8 @@
-
-
 body {
-	background: url(chicago.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-color: #f9f9f9;
 	color: #3a3a3a;
 	font-family:Courier New;
-	padding-top: 70px;
+	margin: 10px 40px 10px 50px;
 }
 a {
 	color:#5f5f5f;
@@ -16,30 +10,15 @@ a {
 	cursor: pointer;
 }
 
-a:hover{
-	color:#064970;
-}
-
-ul {
-  list-style-type: none;
-}
-
 li {
+	padding: 0px 15px 0px 15px;
 	cursor: pointer;
-	color: #000000;
 }
-
-li:hover{
-	color:#505050;
-}
-
 h1 {
 	font-family: News Cycle;
 	align-items: center;
 	align-content: center;
 	align-self: center;
-	color:#064970;
-	font-size: 26px;
 }
 
 h2 {
@@ -49,56 +28,12 @@ h2 {
 	align-items: center;
 	align-content: center;
 	align-self: center;
-	color:#E27D02;
-	font-size: 22px;
 }
 
 p {
 	font-family: News Cycle;
 	margin-left: 20px;
-	font-size:16px;
-}
-
-hr {
-	border-color:#FFC629 !important;
-}
-
-iframe {
-	width: 100%;
-	height: 800px;
-	text-align:center;
-}
-
-.page-header{
-	display: flex;
-	margin-top: 0px;
-	padding-top: 0px;
-	background:transparent;
-	border:none;
-}
-
-.navbar{
-	background:rgba(193,212,254,0.7);
-	padding-top: 10px;
-	line-height: 50px;
-	margin-bottom: 0px;
-    border:none;
-}
-
-.navbar-default .navbar-brand{
-	color:black;
-}
-
-.navbar-right{
-	padding-top: 0px;
-	padding-right:1.5em;
-}
-
-.navbar-nav>li {
-	font-size: 18px;
-	display: inline-block;
-    float: none;
-    padding-left:1.3em;
+	font-size:22px;
 }
 
 .panel {
@@ -116,17 +51,27 @@ iframe {
 	box-shadow: none;
 }
 
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+    float: none;
+    align-items: center;
+    display: inline-block;
+    margin:0 auto;
+    left: 0;
+    padding-left: 70px;
+}
+
 .col-sm-4 {
 	padding: 5px 5px 5px 5px;
 }
 
 .col-sm-6{
-	padding: 5px 5px 5px 15px;
+	padding: 5px 5px 5px 5px;
 	margin-left: 0px;
-}
-
-.collapse.in{
-	display:block;
 }
 
 #body{
@@ -143,17 +88,29 @@ iframe {
 	align-items: center;
 }
 
+#social {
+	padding-left: 0px;
+	padding-right: 0px;
+	align-items: center;
+	float:right;
+}
+
+.icon {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 0px 5px 0px 0px;
+	float:left;
+}
+
 .fa {
+
 	padding: 0px 0px 0px 0px !important;
 	cursor: pointer !important;
 }
 
 .fa.fa-minus{
 	display: none;
-}
-
-.fa.fa-download{
-	font-size: 3em;
 }
 
 #experience {
@@ -164,7 +121,7 @@ iframe {
 	display: none;
 }
 
-#resume{
+#working{
 	display:none;
 }
 
@@ -174,13 +131,6 @@ iframe {
 
 #student_title{
 	padding-left: 20px;
-}
-
-#downloadResume{
-	padding-bottom: 20px;
-	padding-left: 20px;
-	float:left;
-	color:#2274A5;
 }
 
 .content {

@@ -2,96 +2,80 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Aimee's Website</title>
-   <script src="https://use.fontawesome.com/1bd556b535.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <script src="particles.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=News Cycle' rel='stylesheet'>
+	<title>Aimee's Website</title>
+	<script src="https://use.fontawesome.com/1bd556b535.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 	<div class="container-fluid" id="body">
-	<div id="particles-js"></div>
-
 		<div class="page-header">
-	  		<!-- <h1>Aimee Rainu Pierce  <small>I'm really trying</small></h1> -->
-
-	  		<span>
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-				    <!--div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				      <a class="navbar-brand" href="#">Brand</a>
-				    </div-->
-				    <!-- Collect the nav links, forms, and other content for toggling "collapse navbar-collapse"-->
-				    <div class="row">
-				      <ul class="col-sm-12 nav navbar-nav navbar-center">
-				      	<!-- <li><h1>Aimee Rainu Pierce  <small>I'm really trying</small></h1></li> -->
-				        <li><div onclick="toggle_aboutme()">Aimee Rainu Pierce</div></li>
-
-				        <li><div onclick="toggle_exp()">Experience</div></li>
-
-				       <!--  <li><div onclick="toggle_working()">Things I'm Working On</div></li> -->
-
-				        <!-- <li><div onclick="open_resume()">Resume</div></li> -->
-				        <li><div onclick="toggle_resume()">Resume</div></li>
-
-				        <li><div onclick="toggle_passions()"> <i class="fa fa-hand-peace-o" aria-hidden="true"></i></div></li>
-				        	<!-- <img class="email" data-alt-src="icons/heart1.svg" src="icons/heart0.svg"> -->
-
-
-				      </ul>
-				      <!--ul class="nav navbar-nav navbar-right">
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="https://github.com/aimeerpierce"><img src="icons/iconmonstr-github-1.svg"></a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				          </ul>
-				        </li>
-				      </ul-->
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fullwidth">
+					<div class="navbar navbar-header">
+						<!--a class="navbar-brand" onclick="toggle_aboutme()">Aimee Pierce</a-->
+						<!--button class="navbar-toggle" data-toggle="collapse" data-target="navHeaderCollapse"-->
+						<button button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbar" class="navbar collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav">
+							<li onclick="toggle_aboutme()">Home</li>
+							<li onclick="toggle_exp()">Experience</li>
+							<li onclick="toggle_resume()">Resume</li>
+							<li onclick="toggle_passions()"> <i class="fa fa-hand-peace-o" aria-hidden="true"></i></li>
+						</ul>
+						<ul class="navbar navbar-nav navbar-right">
+							<li class="icon">
+								<a href="https://github.com/aimeerpierce" target="_blank"><img class="github" src="icons/github_hover.svg" data-alt-src="icons/iconmonstr-github-1.svg">
+								</a>
+							</li>
+							<li class="icon">
+								<a href="https://www.linkedin.com/in/aimeerpierce/" target="_blank"><img class="linkedin" data-alt-src="icons/linkedin_hover.svg" src="icons/iconmonstr-linkedin-4.svg"></a>
+							</li>
+							<li class="icon">
+								<a href="https://www.facebook.com/aimeerpierce" target="_blank"><img class="facebook" data-alt-src="icons/facebook_hover.svg" src="icons/iconmonstr-facebook-4.svg"></a>
+							</li>
+							<li class="icon">
+								<a href="https://docs.google.com/document/d/1reeo9TBD21p95SuCOOm6MY8fHtc-pHFRyrjBPd01jtg/pub" target="_blank"><img class="note" data-alt-src="icons/note_hover.svg" src="icons/iconmonstr-twitter-4.svg"></a>
+							</li>
+							<li class="icon">
+								<a href="mailto:aimeerpierce@gmail.com?Subject=Hi%20Aimee" target="_top"><img class="email" data-alt-src="icons/email_hover.svg" src="icons/iconmonstr-email-13.svg"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
-			</span>
 		</div>
 
+
 		<div class="row" id="aboutme">
-			<div class="col-sm-12">
+			<div class="col-sm-8">
 				<div class="panel panel-default">
-  					<div class="panel-body">
-  						<div class="row">
-  							<h2>hi, i'm aimee</h2>
-  							<p>I like climbing, yoga, and programming too. They're all fun, creative, and push me to be my best self!</p>
-  							<p>I started programming when I decided to attend my first hackathon, and I've been hooked ever since. I'm so grateful that I've had opportunities to grow as a developer without formally switching my major. Working as a software developer has affirmed that my pivot from Chemical Engineering to Software was well worth the effort, and I'm excited to keep learning and growing! </p>
+					<div class="panel-body">
+  						<div class="row col-sm-6">
+  							<h1>hi, i'm aimee</h1>
+  							<p>I'm a Chemical Engineering (and Computer Science and Spanish) student at Iowa State University. I love hackathons, speaking Spanish, and rock climbing!</p>
+  							<!--p>I started programming when I first attended HackISU, and I've been hooked ever since. I'm so grateful that I've had opportunities to grow as a developer without formally switching my major. Working as a software developer has affirmed that my pivot from Chemical Engineering to Software was well worth the effort, and I'm excited to keep learning and growing! </p-->
   						</div>
-  						<hr>
-  						<div class="row">
-  						<h1 align="center" id="student_title">quick hits</h1>
-  							<div class="col-sm-4 col-sm-offset-2" id="student_deets">
+  						<div class="row col-sm-6">
+  						<h1 align="center" id="student_title">me in bullet point form</h1>
+  							<div>
   								<p>Iowa State University</p>
   								<p>Major: Chemical Engineering</p>
-  								<p>Minors: Computer Science</p>
-  								<p>Spanish</p>
+  								<p>Minors: Computer Science, Spanish</p>
   							</div>
-  							<div class="col-sm-6">
+  							<div>
   								<p>President of <a href="www.hackisu.org" target="_blank">HackISU</a></p>
   								<p><a href="http://digitalwomen.ece.iastate.edu/" target="_blank">Digital Women</a> Code Camp Co-Founder</p>
   								<p><a href="http://www.multicultural.dso.iastate.edu/programs/gwc" target="_blank">George Washington Carver Scholar</a></p>
@@ -102,7 +86,7 @@
 			</div>
 		</div>
 		<div class="row" id="experience">
-			<div class="col-sm-12">
+			<div class="col-sm-8">
 				<div class="row panel panel-default">
 					<div class="col-sm-6 panel-body">
 						<h1 align="center">work</h1>
@@ -193,7 +177,7 @@
 					<div class="panel-body">
 						<div class="row">
 							<a id="downloadResume" href="resume.pdf" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							<iframe frameBorder="0" src="https://docs.google.com/file/d/0Bzc16TWZuwDQWHVKLVQwMnIwcTQ/preview"></iframe></div>
+							<iframe allowtransparency="true" frameBorder="0" src="https://drive.google.com/file/d/0Bzc16TWZuwDQWHVKLVQwMnIwcTQ/preview"></iframe></div>
 					</div>
 				</div>
 			</div>
@@ -220,7 +204,7 @@
 		</div>
 
 
-	<div class="container-fluid panel-default" id="footer">
+	<!--div class="container-fluid panel-default" id="footer">
 		<div class="panel-body" id="social" align="center">
 			<span class="icon">
 				<a href="https://github.com/aimeerpierce" target="_blank"><img class="github" src="icons/github_hover.svg" data-alt-src="icons/iconmonstr-github-1.svg"></a>
@@ -238,8 +222,10 @@
 				<a href="mailto:aimeerpierce@gmail.com?Subject=Hi%20Aimee" target="_top"><img class="email" data-alt-src="icons/email_hover.svg" src="icons/iconmonstr-email-13.svg"></a>
 			</span>
 		</div>
-	</div>
+	</div-->
 </div>
-  <script type="text/javascript" src="script.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
