@@ -53,19 +53,19 @@ h1 {
 	align-items: center;
 	align-content: center;
 	align-self: center;
-	color:#064970;
+	color:#272727;
 	font-size: 26px;
 }
 
 h2 {
 	margin-left: 0px;
-	font-family: News Cycle;
+	font-family: Calibri;
 	padding: 0px 5px 0px 5px;
 	align-items: center;
 	align-content: center;
 	align-self: center;
 	color:#E27D02;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 p {
@@ -169,6 +169,7 @@ iframe {
 
 .fa.fa-download{
 	font-size: 3em;
+	color:black;
 }
 
 #experience {
@@ -203,6 +204,7 @@ iframe {
 }
 
 .btn-primary-outline {
+	color:black;
 	background-color: transparent;
 }
 
