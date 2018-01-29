@@ -31,7 +31,7 @@ a {
 }
 
 a:hover{
-	color:#064970;
+	color:#F58EA6;
 }
 
 ul {
@@ -45,7 +45,7 @@ li {
 }
 
 li:hover{
-	color:#505050;
+	color:#F58EA6;
 }
 
 h1 {
@@ -64,7 +64,7 @@ h2 {
 	align-items: center;
 	align-content: center;
 	align-self: center;
-	color:#E27D02;
+	color:#272727;
 	font-size: 24px;
 }
 
@@ -172,6 +172,10 @@ iframe {
 	color:black;
 }
 
+.fa:hover{
+	color:#F58EA6;
+}
+
 #experience {
 	display: none;
 }
@@ -181,7 +185,11 @@ iframe {
 }
 
 #resume{
-	display:none;
+	display: none;
+}
+
+#reports{
+	display: none;
 }
 
 #student_deets{

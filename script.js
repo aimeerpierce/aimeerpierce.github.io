@@ -39,12 +39,14 @@ function toggle_aboutme() {
 	var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
+	var reports = document.getElementById('reports');
 	var val = window.getComputedStyle(aboutme).getPropertyValue("display");
 	if (val == 'none') {
 	    aboutme.style.display = 'block';
 	    exp.style.display = 'none';
 	    resume.style.display = 'none';
 	    passions.style.display = 'none';
+	    reports.style.display = 'none';
 	}
 }
 
@@ -53,13 +55,14 @@ function toggle_exp() {
 	var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
+	var reports = document.getElementById('reports');
 	var val = window.getComputedStyle(exp).getPropertyValue("display");
 	if (val == 'none') {
 	    exp.style.display = 'block';
 	    aboutme.style.display = 'none';
 	    resume.style.display = 'none';
 	    passions.style.display = 'none';
-
+	    reports.style.display = 'none';
 	}
 }
 
@@ -68,6 +71,7 @@ function toggle_resume() {
 	var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
+	var reports = document.getElementById('reports');
 
 	var val = window.getComputedStyle(resume).getPropertyValue("display");
 	if (val == 'none') {
@@ -75,7 +79,7 @@ function toggle_resume() {
 	    exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    passions.style.display = 'none';
-
+	    reports.style.display = 'none';
 	}
 }
 function toggle_passions() {
@@ -83,6 +87,7 @@ function toggle_passions() {
 	var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
+	var reports = document.getElementById('reports');
 
 	var val = window.getComputedStyle(passions).getPropertyValue("display");
 	if (val == 'none') {
@@ -90,10 +95,25 @@ function toggle_passions() {
 	    exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    resume.style.display = 'none';
-
+	    reports.style.display = 'none';
 	}
 }
+function toggle_reports() {
+	var aboutme = document.getElementById('aboutme');
+	var exp = document.getElementById('experience');
+	var resume = document.getElementById('resume');
+	var passions = document.getElementById('passions');
+	var reports = document.getElementById('reports');
 
+	var val = window.getComputedStyle(reports).getPropertyValue("display");
+	if (val == 'none') {
+	    reports.style.display = 'block';
+	    passions.style.display = 'none';
+	    exp.style.display = 'none';
+	    aboutme.style.display = 'none';
+	    resume.style.display = 'none';
+	}
+}
 function open_resume(){
 	var win = window.open("https://docs.google.com/document/d/1reeo9TBD21p95SuCOOm6MY8fHtc-pHFRyrjBPd01jtg/pub", '_blank');
 	win.focus();
