@@ -1,15 +1,29 @@
+@font-face {
+ font-family: "CrystalUniverse";
+ src: url("CrystalUniverse-Regular.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: "CrystalUniverse";
+ src: url("CrystalUniverse-Regular.ttf") /* TTF file for CSS3 browsers */
+}
 
-
-body {
+.body2 {
 	background: url(chicago.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 	color: #3a3a3a;
-	font-family:Courier New;
+	font-family: Courier New;
 	padding-top: 70px;
 }
+
+body {
+	background-color: #fedbe3;
+	padding-top: 70px;
+	font-family: Courier New;
+}
+
 a {
 	color:#5f5f5f;
 	text-decoration: none !important;
@@ -25,6 +39,7 @@ ul {
 }
 
 li {
+	font-family:CrystalUniverse;
 	cursor: pointer;
 	color: #000000;
 }
@@ -34,7 +49,7 @@ li:hover{
 }
 
 h1 {
-	font-family: News Cycle;
+	font-family: CrystalUniverse;
 	align-items: center;
 	align-content: center;
 	align-self: center;
@@ -45,16 +60,16 @@ h1 {
 h2 {
 	margin-left: 0px;
 	font-family: News Cycle;
-	padding: 5px 5px 5px 5px;
+	padding: 0px 5px 0px 5px;
 	align-items: center;
 	align-content: center;
 	align-self: center;
 	color:#E27D02;
-	font-size: 22px;
+	font-size: 20px;
 }
 
 p {
-	font-family: News Cycle;
+	font-family: Calibri;
 	margin-left: 20px;
 	font-size:16px;
 }
@@ -78,7 +93,7 @@ iframe {
 }
 
 .navbar{
-	background:rgba(193,212,254,0.7);
+	background:#fedbe3;
 	padding-top: 10px;
 	line-height: 50px;
 	margin-bottom: 0px;
@@ -190,3 +205,5 @@ iframe {
 .btn-primary-outline {
 	background-color: transparent;
 }
+
+
