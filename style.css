@@ -1,10 +1,10 @@
 @font-face {
- font-family: "CrystalUniverse";
- src: url("CrystalUniverse-Regular.eot") /* EOT file for IE */
+ font-family: "Georgia, serif;";
+ src: url("Georgia, serif;-Regular.eot") /* EOT file for IE */
 }
 @font-face {
- font-family: "CrystalUniverse";
- src: url("CrystalUniverse-Regular.ttf") /* TTF file for CSS3 browsers */
+ font-family: "Georgia, serif;";
+ src: url("Georgia, serif;-Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
 .body2 {
@@ -19,13 +19,13 @@
 }
 
 body {
-	background-color: #fedbe3;
+	background-color: #fef0db;
 	padding-top: 70px;
 	font-family: Courier New;
 }
 
 a {
-	color:#272727;
+	color:#6d6c6c;
 	text-decoration: none !important;
 	cursor: pointer;
 }
@@ -39,7 +39,7 @@ ul {
 }
 
 li {
-	font-family:CrystalUniverse;
+	font-family:Georgia, serif;;
 	cursor: pointer;
 	color: #000000;
 }
@@ -49,7 +49,7 @@ li:hover{
 }
 
 h1 {
-	font-family: CrystalUniverse;
+	font-family: Georgia, serif;;
 	align-items: center;
 	align-content: center;
 	align-self: center;
@@ -97,7 +97,7 @@ iframe {
 }
 
 .navbar{
-	background:#fedbe3;
+	background:#fef0db;
 	padding-top: 10px;
 	line-height: 50px;
 	margin-bottom: 0px;
@@ -189,10 +189,6 @@ iframe {
 }
 
 #resume{
-	display: none;
-}
-
-#reports{
 	display: none;
 }
 
