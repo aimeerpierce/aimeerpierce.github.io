@@ -5,17 +5,7 @@ var swap_img = function () {
     $this.attr('src', newSource);
 }
 
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-
 $('document').ready(function(){
-
-/*	$("li").hover(function(){
-		$(this).css("color","#878787");
-	}, function() {
-		$(this).css("color","#5f5f5f");
-	});*/
 
 	$(function () {
     	$('img.github').hover(swap_img, swap_img);
@@ -36,39 +26,39 @@ $('document').ready(function(){
 
 function toggle_aboutme() {
 	var aboutme = document.getElementById('aboutme');
-	var exp = document.getElementById('experience');
+	//var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 	var reports = document.getElementById('reports');
 	var val = window.getComputedStyle(aboutme).getPropertyValue("display");
 	if (val == 'none') {
 	    aboutme.style.display = 'block';
-	    exp.style.display = 'none';
+	    //exp.style.display = 'none';
 	    resume.style.display = 'none';
 	    passions.style.display = 'none';
 	    reports.style.display = 'none';
 	}
 }
 
-function toggle_exp() {
+/*function toggle_exp() {
 	var aboutme = document.getElementById('aboutme');
-	var exp = document.getElementById('experience');
+	//var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 	var reports = document.getElementById('reports');
 	var val = window.getComputedStyle(exp).getPropertyValue("display");
 	if (val == 'none') {
-	    exp.style.display = 'block';
+	    //exp.style.display = 'block';
 	    aboutme.style.display = 'none';
 	    resume.style.display = 'none';
 	    passions.style.display = 'none';
 	    reports.style.display = 'none';
 	}
-}
+}*/
 
 function toggle_resume() {
 	var aboutme = document.getElementById('aboutme');
-	var exp = document.getElementById('experience');
+	//var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 	var reports = document.getElementById('reports');
@@ -76,7 +66,7 @@ function toggle_resume() {
 	var val = window.getComputedStyle(resume).getPropertyValue("display");
 	if (val == 'none') {
 	    resume.style.display = 'block';
-	    exp.style.display = 'none';
+	    //exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    passions.style.display = 'none';
 	    reports.style.display = 'none';
@@ -84,7 +74,7 @@ function toggle_resume() {
 }
 function toggle_passions() {
 	var aboutme = document.getElementById('aboutme');
-	var exp = document.getElementById('experience');
+	//var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 	var reports = document.getElementById('reports');
@@ -92,7 +82,7 @@ function toggle_passions() {
 	var val = window.getComputedStyle(passions).getPropertyValue("display");
 	if (val == 'none') {
 	    passions.style.display = 'block';
-	    exp.style.display = 'none';
+	    //exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    resume.style.display = 'none';
 	    reports.style.display = 'none';
@@ -100,7 +90,7 @@ function toggle_passions() {
 }
 function toggle_reports() {
 	var aboutme = document.getElementById('aboutme');
-	var exp = document.getElementById('experience');
+	//var exp = document.getElementById('experience');
 	var resume = document.getElementById('resume');
 	var passions = document.getElementById('passions');
 	var reports = document.getElementById('reports');
@@ -109,7 +99,7 @@ function toggle_reports() {
 	if (val == 'none') {
 	    reports.style.display = 'block';
 	    passions.style.display = 'none';
-	    exp.style.display = 'none';
+	    //exp.style.display = 'none';
 	    aboutme.style.display = 'none';
 	    resume.style.display = 'none';
 	}
